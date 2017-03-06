@@ -1,6 +1,6 @@
 # Содержание
 
- 1. [Цель](https://github.com/liss38/htmlacademy-htmladaptive-kit/blob/master/pink/_mentorship/01/help-manual.md#1-Цель)
+ 1. [Цель](help-manual.md#1-Цель)
  2. Чек-лист
  3. Общая структура папок проекта
  4. Заготовки для html-страниц
