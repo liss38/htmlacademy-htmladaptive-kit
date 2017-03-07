@@ -1,0 +1,41 @@
+{
+  "name": "234480-pink",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Личный проект «Пинк» от HTML Academy",
+  "author": "Ярослав Сергиенко",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:htmlacademy-adaptive/234480-pink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htmlacademy-adaptive/234480-pink/issues"
+  },
+  "homepage": "https://github.com/htmlacademy-adaptive/234480-pink",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.0.7",
+    "autoprefixer": "^6.4.1",
+    "browser-sync": "^2.15.0",
+    "gulp": "3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "6.2.0"
+  },
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "less/**/*.less"
+  ],
+  "engines": {
+    "node": "6.5"
+  }
+}

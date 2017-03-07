@@ -1,0 +1,79 @@
+@page-mobile-width: 280px;
+@page-tablet-width: 620px;
+@page-desktop-width: 940px;
+
+
+.page {}
+.page-header {}
+.page-content {}
+.page-footer {}
+
+
+.page-section {
+	position: relative;
+
+	display: block;
+	width: 100%;
+	min-width: @page-mobile-width;
+
+
+	&__inner {
+		position: relative;
+
+		width: 100%;
+		max-width: @page-desktop-width;
+		min-width: @page-mobile-width;
+		margin: 0 auto;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+
+
+		&:before,
+		&:after {
+			content: " ";
+			display: table;
+		}
+
+
+		&:after {
+			clear: both;
+		}
+	}
+}
+
+@media @mobile {
+	.page-section {
+		min-width: @page-mobile-width;
+
+
+		&__inner {
+			width: @page-mobile-width;
+		}
+	}
+}
+
+
+@media @tablet {
+	.page-section {
+		min-width: @page-tablet-width;
+
+
+		&__inner {
+			width: @page-tablet-width;
+		}
+	}
+}
+
+
+@media @desktop {
+	.page-section {
+		min-width: @page-desktop-width;
+
+
+		&__inner {
+			width: @page-desktop-width;
+		}
+	}
+}

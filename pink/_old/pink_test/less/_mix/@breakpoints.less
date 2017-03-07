@@ -1,0 +1,23 @@
+/*
+	ЗНАЧЕНИЯ
+	ТОЧЕК
+	СЛОМА
+*/
+
+/* DESKTOP */ @desktop-min: 1024px;
+/* TABLET */  @tablet-max: (@desktop-min - 1);
+/* TABLET */  @tablet-min: 700px;
+/* MOBILE */  @mobile-max: (@tablet-min - 1);
+/* MOBILE */  /*@mobile-min: 480px;*/
+
+
+
+
+/*
+	ПРАВИЛА
+	ДЛЯ
+	@MEDIA-ВЫРАЖЕНИЙ
+*/
+@desktop: ~'screen and (min-width: @{desktop-min})';
+@tablet: ~'screen and (min-width: @{tablet-min}) and (max-width: @{tablet-max})';
+@mobile: ~'screen and (max-width: @{mobile-max})';

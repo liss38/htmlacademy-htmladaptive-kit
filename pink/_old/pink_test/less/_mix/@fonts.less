@@ -1,0 +1,24 @@
+/*
+	миксин для подключения кроссбраузерного шрифта в @font-face
+*/
+.set_font_face(@font-family, @font-file, @font-path: @fonts-path, @font-weight: normal, @font-style: normal) {
+	@font-face {
+		font-family: @font-family;
+		src: local(@font-family),
+			 url('@{fonts-path}/@{font-file}.woff2') format('woff2'),
+			 url('@{fonts-path}/@{font-file}.woff') format('woff'),
+			 url('@{fonts-path}/@{font-file}.ttf') format('truetype');
+		font-weight: @font-weight;
+		font-style: @font-style;
+	}
+}
+
+
+/*
+	БИБЛИОТЕКА СНИППЕТОВ и МИКСИНОВ 
+	ДЛЯ РАБОТЫ СО ШРИФТАМИ
+*/
+.font-os_semibold (@fsz) {
+	font: normal 600 @fsz 'Open Sans';
+}
+
