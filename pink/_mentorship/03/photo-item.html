@@ -1,0 +1,95 @@
+			<div class="section">
+				<div class="section__inner">
+					<article class="foto foto__top">
+						<picture>картинка</picture>
+						 <div class="photo__description">
+							<div class="foto__name">Анна</div>
+							<div class="foto__taim">(5 минут назад)</div>
+							<div class="foto__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</div>
+							<div class="foto__foter">нравится:215</div>
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="section__inner">
+					<article class="foto foto">
+						<picture>картинка</picture>
+						 <div class="photo__description">
+							<div class="foto__name">Левон</div>
+							<div class="foto__taim">(5 часов назад)</div>
+							<div class="foto__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+							<div class="foto__foter">нравится:356</div>
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<!-- 
+				Сейчас разметим только блок "Фото дня" и один блок для остальных фото,
+				повторяющиеся блоки с фото пока не стоит "копипастить", т.к. есть критерий https://up.htmlacademy.ru/adaptive/10/criteries#basic-17
+				в котором говориться про ретинизацию изображений, т.е. здеьс для тега picture и тега img пояаяться дополнительные свойства, 
+				о них расскажут в 6-м вебинаре "Адаптивность: графика", поэтому чтобы потом много замен не делать разметим только одну окпию для фото-блока
+
+				Давай посмотрим на макет pink-photo-mobile.jpg, блоки с фотками:
+					1. есть два типа блоков "обычный" и "фотодня", который отличается шириной фотографии и красной биркой с надписью "ФОТО ДНЯ", 
+					   в остальном эти блоки одинаковые, получается здесь будет БЭМ-модификатор для фотки в блоке "фотодня"
+
+					2. каждый блок состоит из фотки и описания к этой фотке
+
+					3. описание к фотке состоит из автора, времени, подписи/сообщения, "лайков"
+
+
+				Пространство имен:
+					.photo-item - весь блок с фоткой и описанием
+					.photo-item__img - контейнер для фотки, так же допустимы такие имена: photo-item__image/photo-item__pic/photo-item__picture/photo-item__photo
+					.photo-item__description - контейнер для "текстов" под фоткой, так же допустимы: photo-item__info/photo-item__about
+					.photo-item__who - имя/ник автора, варианты: photo-item__name/photo-item__author/photo-item__user
+					.photo-item__when - время когда он залил фотку, допустимы: photo-item__time/photo-item__date
+					.photo-item__text - текст/комментарий к фотке, допустимы: photo-item__comment/photo-item__note/photo-item__message
+
+					для панели с "лайками" сделал отдельный БЭМ-блок, т.к. эта панель претендует на многоразовое использование(less/layout/uikit/likes.less)
+					.likes - общий контейнер для лайков
+					.likes__button - кнопка с иконкой в виде сердца, для него сразу активный(лайкнутый) модификатор .likes__button--active
+					.likes__scores - количество лайков
+			 -->
+
+			<div class="section  photo-list-section">
+				<div class="section__inner  photo-list-section__inner">
+
+
+					<!-- фото дня -->
+					<article class="photo-item  photo-item--top">
+						<picture class="photo-item__img  photo-item__img--top">картинка</picture>
+						 <div class="photo-item__description">
+							<div class="photo-item__name">Левон</div>
+							<div class="photo-item__time">(5 часов назад)</div>
+							<div class="photo-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+							<div class="photo-item__foter">нравится:356</div>
+							<div class="likes">
+								<button class="likes__button">like</button>
+								<span class="likes__scores">нравится:356</span>
+							</div>
+						</div>
+					</article>
+
+
+					<!-- обычное фото -->
+					<article class="photo-item">
+						<picture class="photo-item__img">картинка</picture>
+						 <div class="photo-item__description">
+							<div class="photo-item__name">Левон</div>
+							<div class="photo-item__time">(5 часов назад)</div>
+							<div class="photo-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+							<div class="photo-item__foter">нравится:356</div>
+							<div class="likes">
+								<button class="likes__button">like</button>
+								<span class="likes__scores">нравится:356</span>
+							</div>
+						</div>
+					</article>
+
+
+				</div>
+			</div>
