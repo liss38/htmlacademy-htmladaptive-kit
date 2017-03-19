@@ -1,0 +1,210 @@
+<!-- less -->
+<!-- photo-post.less -->
+.photo-post {
+	&--modificator {
+		
+	}
+
+	&__photo {
+
+
+		&--first {}  /*css: .photo-post__photo--first {}*/
+	}
+
+	&__info {}
+}
+
+.footer-copyright {
+	span {}
+	img {}
+}
+@mob: ~'screen and (max-wdth: 320px)'
+@mob-width: 320px;
+
+@media screen and (max-wdth: @mob-width) {
+
+}
+
+.set-fonts('PT Sans', 'ptsans', 400);
+.set-fonts('PT Sans', 'ptsans_bold', 700);
+
+
+
+
+
+
+
+<!-- html -->
+<body>
+	<div class="page">
+		<header class="page__header">
+			<div class="section  header-section">
+				<div class="section__inner  header-section__inner">
+					<a class="header-logo" href="index.html">PINK</a>
+					<nav class="header-menu">
+						<span id="header-menu-toggle" class="header-menu__toggle  header-menu__toggle--active"></span>
+						<ul id="header-menu--list" class="header-menu__list  header-menu__list--opened">
+							<li class="header-menu__item"><a class="header-menu__link" href="index.html">ГЛАВНАЯ</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="photo.html">ФОТОГРАФИИ</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="form.html">КОНКУРС</a></li>
+							<li class="header-menu__item"><a class="header-menu__link" href="http://htmlacademy.ru">HTML ACADEMY</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+
+
+
+
+
+
+
+		<main class="page__content">
+
+
+
+			<div class="section  photo-section">
+				<div class="section__inner  photo-section__inner">
+
+					<article class="photo-post">
+						<a href="#" class="photo-post__photo">
+							<picture>
+								<img src="" alt="photo">
+							</picture>
+						</a>
+						<div class="photo-post__info">
+							<b class="photo-post__username">Анна</b>
+							<span class="photo-post__when">(5 минут назад)</span>
+						</div>
+
+						<div class="photo-post__usermessage">
+							<p>Текст сообщения</p>
+							<p>Текст сообщения 2</p>
+						</div>
+
+						<div class="photo-post__controls">
+							<button class="like-button"></button>
+							<p class="photo-post__likes-number">Нравится: 215</p>
+						</div>
+					</article>
+				<div/>
+			<div/>
+
+
+
+
+
+
+
+
+			<div class="section  form-section">
+				<div class="section__inner  form-section__inner">
+					<form action="#" class="form">
+						<fieldset class="fieldset">
+							<div class="form-field">
+								<label for="form-field-" class="form-field__label">Фамилия:</label>
+								<input id="form-field-" type="text" class="form-field__origin" placeholder="Фамилия">
+							</div>
+							
+
+						</fieldset>
+						<fieldset class="fieldset">
+							<legend class="fieldset__title">ваши путешествия</legend>
+							
+						</fieldset>
+						<fieldset class="fieldset">
+							<legend class="fieldset__title"></legend>
+							
+						</fieldset>
+						<fieldset class="fieldset">
+							<legend class="fieldset__title">приложения</legend>
+							
+						</fieldset>
+						<fieldset class="fieldset">
+							<legend class="fieldset__title"></legend>
+						</fieldset>
+
+						<input type="submit" class="form__submit">
+					</form>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<footer class="page__footer">
+			<div class="section  footer-inner">
+				<div class="section__inner  footer-inner__inner">
+					
+					<a class="footer__logo" href="#"><img class="footer__glasses" src="http://placehold.it/147x40" width="147" height="40" alt="Логотип"></a>
+
+
+					<ul class="footer-social">
+						<li class="footer-social__item">
+							<a class="footer-social__link  footer-social__link--tw" href="#"></a>
+						</li>
+
+						<li class="footer-social__item">
+							<a class="footer-social__link  footer-social__link--fb" href="#"><img src="http://placehold.it/46x46" width="46" height="46" alt="facebook"></a>
+						</li>
+
+						<li class="footer__social-item">
+							<a class="footer__social-link" href="#"><img src="http://placehold.it/46x46" width="46" height="46" alt="Youtube.SVG"></a>
+						</li>
+					</ul>
+
+					<a href="#" class="footer-copyright">
+						<span class="footer-copyright__text">Разработано </span>
+						<img class="footer-copyright__logo" src="http://placehold.it/27x34" width="27" height="34" alt="Htmlacademy.SVG">
+					</a>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+
+		<footer class="page__footer">
+			<div class="section  footer-contacts">
+				<div class="section__inner  footer-contacts__inner">
+					<h2 class="section__heading">Остались вопросы? Свяжитесь с нами!</h2>
+
+					<article class="footer-contact">
+						<p class="footer-contact__text">Звоните:</p>
+						<a href="tel:+78125556666" class="footer-contact__info">+7 (812) 555-66-66</a>
+					</article>
+
+
+					<article class="footer-contact">
+						<p class="footer-contact__text">Пишите:</p>
+						<a href="mailto:mail@htmlacademy.ru" class="footer-contact__info">mail@htmlacademy.ru</a>
+					</article>
+
+					<article class="footer-contact">
+						<p class="footer-contact__text">Приезжайте в гости:</p>
+						<p class="footer-contact__info">ул. Большая Конюшенная, 19/8</p>
+					</article>
+				</div>
+			</div>
+
+			<div class="section  footer-map">
+				<div class="section__inner  footer-map__inner">
+					
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
